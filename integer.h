@@ -14,6 +14,7 @@ class Integer : public Object{
 		int GetValue()const;
 		void SetValue(int);
 		virtual bool Equals(const Object& rhs)const;
+		virtual Object* Clone()const;
 };
 
 #endif /* end of include guard: INTEGER_H */
