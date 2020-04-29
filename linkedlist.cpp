@@ -61,6 +61,12 @@ LinkedList::~LinkedList(){
 		delete tempNode;
 		tempNode = _head;
 	}
+//	Another way to do it
+//	Which one is best?
+//	while (_size != 0){
+//		Object* tmp = Remove(0);
+//		delete tmp;
+//	}
 }
 /**
  * Inserts an element into a given position.
@@ -214,4 +220,13 @@ void LinkedList::Clear(){
 	}
 	_head = nullptr;
 	_size = 0;
+
+//	Another way to do it
+//	Which one is best?
+//	while (_size != 0){
+//		Object* tmp = Remove(0);
+//		delete tmp;
+//	}
+//	_size = 0;
+
 }
