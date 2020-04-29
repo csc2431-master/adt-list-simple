@@ -48,16 +48,18 @@ const LinkedList& LinkedList::operator=(const LinkedList& rhs){
 }
 /**
  * Destructor
- * It frees the dynamic memory allocated for the list, it does so in
- * two steps:
- * 1. Removes the first element of the list until the list is empty, after
- *    each removal it frees the memory of that object
- * 2. ???????
+ * It frees the dynamic memory allocated for the list, it does so by
+ * traversing the list and releasing the memory of each element and
+ * then its node.
  */
 LinkedList::~LinkedList(){
-	while (_size != 0){
-		Object* tmp = Remove(0);
-		delete tmp;
+	Node* tempNode = _head;
+	while (_head != nullptr){
+		_head = tempNode->next;
+		if (tempNode->data)
+			delete tempNode->data;
+		delete tempNode;
+		tempNode = _head;
 	}
 }
 /**
@@ -198,15 +200,18 @@ string LinkedList::ToString()const{
 }
 /**
  * Very similar to the destructor, this method releases all the elements
- * of the list. It also
- * sets the size to zero. This method makes the list become empty.
- *
- * 2. ???????
+ * of the list. It also sets the size to zero, and the head to nullptr.
+ * This method makes the list become empty.
  */
 void LinkedList::Clear(){
-	while (_size != 0){
-		Object* tmp = Remove(0);
-		delete tmp;
+	Node* tempNode = _head;
+	while (_head != nullptr){
+		_head = tempNode->next;
+		if (tempNode->data)
+			delete tempNode->data;
+		delete tempNode;
+		tempNode = _head;
 	}
 	_head = nullptr;
+	_size = 0;
 }
