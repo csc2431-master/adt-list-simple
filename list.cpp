@@ -1,3 +1,10 @@
+/*
+ * Title:		List class method definition
+ * Purpose:		ADT List implementation
+ * Author:		Carlos Arias
+ * Date:		April 29, 2020
+ */
+
 #include "list.h"
 /**
  * Default Constructor

@@ -1,3 +1,9 @@
+/*
+ * Title:		General Object
+ * Purpose:		Declaration of a general base class
+ * Author:		Carlos Arias
+ * Date:		April 29, 2020
+ */
 #ifndef OBJECT_H
 #define OBJECT_H
 

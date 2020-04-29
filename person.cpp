@@ -1,3 +1,9 @@
+/*
+ * Title:		Person Class
+ * Purpose:		Definition of the methods of the Person class
+ * Author:		Carlos Arias
+ * Date:		April 29, 2020
+ */
 #include "person.h"
 
 #include <cstring>

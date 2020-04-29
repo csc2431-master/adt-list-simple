@@ -1,3 +1,9 @@
+/*
+ * Title:		Integer wrapper Class
+ * Purpose:		A subclass of object to wrap up an integer
+ * Author:		Carlos Arias
+ * Date:		April 29, 2020
+ */
 #ifndef INTEGER_H
 #define INTEGER_H
 

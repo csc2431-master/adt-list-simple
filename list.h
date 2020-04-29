@@ -1,3 +1,9 @@
+/*
+ * Title:		ADT List class Declaration
+ * Purpose:		An abstract class implementation of the ADT List
+ * Author:		Carlos Arias
+ * Date:		April 29, 2020
+ */
 #ifndef LIST_H
 #define LIST_H
 

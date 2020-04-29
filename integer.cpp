@@ -1,3 +1,9 @@
+/*
+ * Title:		Integer wrapper Class methods definition
+ * Purpose:		A subclass of object to wrap up an integer
+ * Author:		Carlos Arias
+ * Date:		April 29, 2020
+ */
 #include "integer.h"
 
 #include <string>

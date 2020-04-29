@@ -1,3 +1,11 @@
+/*
+ * Title:		Person class
+ * Purpose:		Declaration of a class to represent a basic person
+ * 				it has two members name and age. Name is a dynamically
+ * 				allocated c-string
+ * Author:		Carlos Arias
+ * Date:		April 29, 2020
+ */
 #ifndef PERSON
 #define PERSON
 

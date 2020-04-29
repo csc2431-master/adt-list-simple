@@ -1,3 +1,9 @@
+/*
+ * Title:		General Object
+ * Purpose:		Definition of methods of a general base class
+ * Author:		Carlos Arias
+ * Date:		April 29, 2020
+ */
 #include "object.h"
 
 #include <string>
