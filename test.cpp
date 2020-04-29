@@ -150,6 +150,9 @@ void Test(List* list, const string& message, bool fixedSize){
 		cout << "\t" << ++passed << "\tTests Passed" << endl;
 		assert(object->ToString() == "Person: {name: Violet, age: 1}");
 		cout << "\t" << ++passed << "\tTests Passed" << endl;
+		// Fixing the Leak
+		delete object;
+		object = nullptr;
 		assert(list->Size() == 5);
 		cout << "\t" << ++passed << "\tTests Passed" << endl;
 
