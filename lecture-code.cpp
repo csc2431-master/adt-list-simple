@@ -22,6 +22,9 @@ int main(int argc, char* argv[]){
 		cout << myObjects[i]->ToString() << endl;
 	}
 
+	for (int i = 0; i < SIZE; ++i) {
+		delete myObjects[i];
+	}
 
 	return 0;
 }
