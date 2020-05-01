@@ -19,7 +19,7 @@ int main(int argc, char* argv[]){
 	myObjects[3] = new Person("Blanca", 44);
 
 	for (int i = 0; i < SIZE; ++i) {
-		cout << myObjects[i].ToString() << endl;
+		cout << myObjects[i]->ToString() << endl;
 	}
 
 
