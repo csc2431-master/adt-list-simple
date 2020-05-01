@@ -200,13 +200,13 @@ void Test(List* list, const string& message, bool fixedSize){
 		for (size_t i = 0; i < 5; i++) {
 			insertedData >> name >> age >> position;
 			object = new Person(name, age);
-			assert(list->IndexOf(object) == position);
+			assert(list->IndexOf(object) == static_cast<int>(position));
 			cout << "\t" << ++passed << "\tTests Passed" << endl;
 			insertedData >> number >> position;
 			delete object;
 			object = nullptr;
 			object = new Integer(number);
-			assert(list->IndexOf(object) == position);
+			assert(list->IndexOf(object) == static_cast<int>(position));
 			cout << "\t" << ++passed << "\tTests Passed" << endl;
 			delete object;
 			object = nullptr;
