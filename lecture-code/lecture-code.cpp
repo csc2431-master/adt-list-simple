@@ -1,6 +1,6 @@
-#include "object.h"
-#include "integer.h"
-#include "person.h"
+#include "../object.h"
+#include "../integer.h"
+#include "../person.h"
 
 #include <iostream>
 
